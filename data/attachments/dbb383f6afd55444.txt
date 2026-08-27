@@ -1,0 +1,7 @@
+[LOG] Using Firebase Production Services for environment: stage [3:41:27 PM]
+[LOG] trackEvent view_login {timestamp: 2026-08-27T15:41:28.700Z} [3:41:28 PM]
+[LOG] Using Firebase Production Services for environment: stage [3:41:30 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [3:41:35 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [3:41:37 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [3:41:47 PM]
+[LOG] 📧 Enviando email de éxito al admin de ankla a: {actuariaContribuyenteEspecial: true, mailAlertas: [OCULTO];[OCULTO], mailCobranzas: [OCULTO], mailDetalle: [OCULTO], mailSoporte: [OCULTO];[OCULTO]} [3:42:18 PM]

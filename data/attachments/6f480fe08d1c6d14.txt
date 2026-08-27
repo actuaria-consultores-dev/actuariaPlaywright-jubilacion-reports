@@ -1,0 +1,145 @@
+🎭️ ---- Empezando pre condición
+🔐 Iniciando sesión con usuario demo...
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ Login exitoso
+🏠 Verificando navegación a página principal...
+✅ Navegación exitosa a dashboard
+🎭️ ---- Empezando TC03
+
+======================================================================
+
+🎯 INICIANDO FLUJO JUBILACIÓN PATRONAL
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DEL FLUJO
+======================================================================
+   • Tipo de Cálculo: pension-fondo
+   • Tipo de Remuneración: upload-file
+   • Documentos PDF: 2 obligatorios
+   • Saldo Contable: No
+   • Información de Rebates: No
+   • Presenta Reingreso: No
+   • Periodos de Reingreso: 0
+   • Política de Pago: no-configurada
+   • Bonificación Voluntaria: No
+   • Plan: no-especificado
+======================================================================
+
+
+📋 INFORMACIÓN DEL EX TRABAJADOR
+
+📋 [JubilacionPatronalWorkflow] Datos del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez",
+  "Género": "masculino"
+}
+
+📅 FECHAS
+
+📋 [JubilacionPatronalWorkflow] Configuración de Fechas
+{
+  "Año de Nacimiento": "1970",
+  "Año de Primer Ingreso": "1998",
+  "Año de Última Salida": "2017",
+  "Años de Antigüedad": 19
+}
+
+💰 INFORMACIÓN DE REMUNERACIÓN
+
+📋 [JubilacionPatronalWorkflow] Configuración de Remuneración
+{
+  "Método de Entrada": "upload-file",
+  "Valor del Salario": "no-especificado",
+  "Meses a Completar": 61,
+  "Conoce Último Cargo": "No",
+  "Conoce Rebates": "No"
+}
+
+🔍 VALIDACIONES ESPERADAS
+
+📋 [JubilacionPatronalWorkflow] Configuración de Validaciones
+{
+  "Mostrar Error de Edad": "No",
+  "Deshabilitado": "No",
+  "Errores de Salario Mínimo": "ninguno",
+  "Desactivar Continuar": "No"
+}
+
+======================================================================
+
+ℹ️  [JubilacionPatronalWorkflow] ConfirmarPedidoInterceptor activado - se interceptarán los endpoints del pedido
+
+📍 Paso 1: Creando nuevo ex trabajador
+
+
+📍 Paso 1: Navegando y creando ex trabajador
+📊 [JubilacionPatronalWorkflow] Paso 1 visible
+✅ [JubilacionPatronalWorkflow] Ex trabajador creado
+📋 [JubilacionPatronalWorkflow] Empleado Registrado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez"
+}
+📁 [JubilacionPatronalWorkflow] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+✅ [JubilacionPatronalWorkflow] Primer PDF cargado: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronalWorkflow] Cargando archivo: ./tests/data/documents/sri_template.pdf
+✅ [JubilacionPatronalWorkflow] Segundo PDF cargado: ./tests/data/documents/sri_template.pdf
+
+📍 Paso 2: Configurando fechas del ex trabajador
+
+
+📍 Paso 2: Configurando fechas del colaborador
+📊 [JubilacionPatronal-Step2] Paso 2 visible
+📋 [JubilacionPatronal-Step2] Fecha base del sistema
+{
+  "currentDay": "27",
+  "currentMonth": "8"
+}
+👆 [JubilacionPatronal-Step2] Seleccion masculino: Genero
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1970
+👆 [JubilacionPatronal-Step2] Ingreso anio 1970: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1998
+👆 [JubilacionPatronal-Step2] Ingreso anio 1998: Fecha de primer ingreso
+📊 [JubilacionPatronal-Step2] Sin errores de edad
+👆 [JubilacionPatronal-Step2] Seleccion No: Radio Reingreso
+   📅 Buscando grupo de fecha: "Fecha de última salida"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2017
+👆 [JubilacionPatronal-Step2] Ingreso anio 2017: Fecha de ultima salida
+👆 [JubilacionPatronal-Step2] Commit de cambios de fecha: Formulario Paso 2
+📋 [JubilacionPatronal-Step2] Calculo de antiguedad
+{
+  "entryYear": "1998",
+  "exitYear": "2017",
+  "yearsEmployed": 19
+}
+📊 [JubilacionPatronal-Step2] Verificando boton Continuar bloqueado (19 anios < 20)
+✓ [JubilacionPatronal-Step2] Estado boton Continuar: esperado "Bloqueado funcionalmente" → actual "Bloqueado funcionalmente"
+📊 [JubilacionPatronal-Step2] Validando mensaje de no cumple requisitos
+✅ [JubilacionPatronal-Step2] Mensaje de error por menos de 20 anios verificado
+⚠️  [JubilacionPatronal-Step2] Flujo detenido - no cumple requisito de 20 anios
+✅ [JubilacionPatronalWorkflow] Paso 2 completado
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronalWorkflow] FLUJO COMPLETO FINALIZADO
+
+
+======================================================================
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 7 console message(s) logged to stderr

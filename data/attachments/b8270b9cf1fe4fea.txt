@@ -1,0 +1,49 @@
+🎭️ ---- Empezando pre condición
+🔐 Iniciando sesión con usuario demo...
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ Login exitoso
+🏠 Verificando navegación a página principal...
+✅ Navegación exitosa a dashboard
+🎭️ ---- Empezando TC05
+🎭️ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Iniciando flujo edge-case 20 años (offset -1) con secuencia actualizada
+
+📍 Paso 1: TC04/TC05 Edge-case 20 años: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Paso 1 visible
+✅ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Ex trabajador creado
+📁 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Cargando archivo: ./tests/data/documents/sri_template.pdf
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Click automatico luego de segunda carga PDF en Paso 1: Boton Continuar
+📊 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Paso 2 visible
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Seleccion masculino: Genero
+📋 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Fechas dinamicas calculadas
+{
+  "birthDate": "8/27/1978",
+  "entryDate": "8/27/2000",
+  "exitDate": "8/26/2006",
+  "dayOffset": -1
+}
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/08/1978
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Ingreso anio 1978: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/08/2000
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Ingreso anio 2000: Fecha de primer ingreso
+✓ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Alerta validacion de edad: esperado "No visible" → actual "No visible"
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Seleccion No: Radio Reingreso
+   📅 Buscando grupo de fecha: "Fecha de última salida"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 26/08/2006
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Ingreso anio 2006: Fecha de ultima salida
+👆 [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Commit de cambios de fecha: Formulario Paso 2
+✓ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Estado boton Continuar: esperado "Bloqueado funcionalmente" → actual "Bloqueado funcionalmente"
+✓ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Mensaje no cumple requisitos: esperado "El ex colaborador no cumple con los requisitos legales para acceder al pago de la jubilación patronal." → actual "El ex colaborador no cumple con los requisitos legales para acceder al pago de la jubilación patronal."
+
+✅ ✅ ✅ [JubilacionPatronal-TC04-TC05-EdgeCase20Years] Flujo edge-case 20 años validado correctamente
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 9 console message(s) logged to stderr

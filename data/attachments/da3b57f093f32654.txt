@@ -1,0 +1,87 @@
+🎭️ [JubilacionPatronal-Story] Empezando pre condicion de Jubilacion Patronal
+🔐 [JubilacionPatronal-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [JubilacionPatronal-Story] Login exitoso
+🔍 [JubilacionPatronal-Story] Verificando navegacion a dashboard
+✅ [JubilacionPatronal-Story] Navegacion exitosa a dashboard
+🎭️ [JubilacionPatronal-TC03] Empezando TC03: validacion de error en reingreso
+
+======================================================================
+
+🎯 INICIANDO VALIDACIÓN DE ERROR EN REINGRESO (TC03)
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DE VALIDACIÓN DE REINGRESO
+======================================================================
+   • Presenta Reingreso: Sí
+   • Error Esperado: Fecha de salida menor a fecha de ingreso
+   • Periodos de Reingreso: 1
+======================================================================
+
+📋 [JubilacionPatronal-TC03-ReentryValidation] Información del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez",
+  "Año Nacimiento": "1975",
+  "Año Primer Ingreso": "1995"
+}
+📋 [JubilacionPatronal-TC03-ReentryValidation] Fechas de Reingreso Configuradas
+{
+  "Fecha de Salida": "15/06/1994",
+  "Fecha de Reingreso": "15/06/1993"
+}
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC03-ReentryValidation] Paso 1 visible
+✅ [JubilacionPatronal-TC03-ReentryValidation] Ex trabajador creado
+📁 [JubilacionPatronal-TC03-ReentryValidation] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+✅ [JubilacionPatronal-TC03-ReentryValidation] PDF 1 cargado: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC03-ReentryValidation] Cargando archivo: ./tests/data/documents/sri_template.pdf
+✅ [JubilacionPatronal-TC03-ReentryValidation] PDF 2 cargado: ./tests/data/documents/sri_template.pdf
+
+📍 Paso 2: Configurando fechas con reingreso
+
+
+📍 Paso 2: Configurando fechas con reingreso
+📊 [JubilacionPatronal-TC03-ReentryValidation] Paso 2 visible
+👆 [JubilacionPatronal-TC03-ReentryValidation] masculino: Género
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1975
+👆 [JubilacionPatronal-TC03-ReentryValidation] 1975: Fecha de Nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1995
+👆 [JubilacionPatronal-TC03-ReentryValidation] 1995: Fecha de Primer Ingreso
+✅ [JubilacionPatronal-TC03-ReentryValidation] Reingreso: Sí seleccionado
+
+🔍 Ingresando Fechas de Reingreso (Se Espera Error)
+
+📅 Configurando fecha de salida 1...
+✅ Fecha de salida 1: 15/06/1994
+📅 Configurando fecha de re-ingreso 1...
+✅ Fecha de re-ingreso 1: 15/06/1993
+👆 [JubilacionPatronal-TC03-ReentryValidation] Ingresadas para validación: Fechas Reingreso
+✓ [JubilacionPatronal-TC03-ReentryValidation] Mensaje validacion reingreso: esperado "La fecha de salida no puede ser menor a la fecha de primer ingreso" → actual "La fecha de salida no puede ser menor a la fecha de primer ingreso"
+
+======================================================================
+
+✅ [JubilacionPatronal-TC03-ReentryValidation] Validación de reingreso completada - Error verificado correctamente
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC03] TC03 finalizado
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 7 console message(s) logged to stderr

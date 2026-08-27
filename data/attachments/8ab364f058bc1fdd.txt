@@ -1,0 +1,86 @@
+🎭️ ---- Empezando pre condición
+🔐 Iniciando sesión con usuario demo...
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ Login exitoso
+🏠 Verificando navegación a página principal...
+✅ Navegación exitosa a dashboard
+🎭️ ---- Empezando TC02
+
+======================================================================
+
+🎯 INICIANDO VALIDACIÓN DE REQUISITO 20+ AÑOS (ACTAF-2216 TC02)
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DE VALIDACIÓN DE 20 AÑOS
+======================================================================
+   • Requisito Esperado: 20+ años de antigüedad
+   • Error de Edad Esperado: No (debe estar deshabilitado)
+   • Botón Continuar Esperado: Habilitado después de ingresar salida
+======================================================================
+
+📋 [JubilacionPatronal-TC02-20YearRequirement] Información del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez",
+  "Año Nacimiento": "1970",
+  "Año Primer Ingreso": "1998",
+  "Año Última Salida": "2024",
+  "Antigüedad Esperada": "26 años"
+}
+
+📍 Paso 1: TC02 Requisito 20+ años: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC02-20YearRequirement] Paso 1 visible
+✅ [JubilacionPatronal-TC02-20YearRequirement] Ex trabajador creado
+📁 [JubilacionPatronal-TC02-20YearRequirement] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC02-20YearRequirement] Cargando archivo: ./tests/data/documents/sri_template.pdf
+👆 [JubilacionPatronal-TC02-20YearRequirement] Click automatico luego de segunda carga PDF en Paso 1: Boton Continuar
+
+📍 Paso 2: Validando requisitos de edad y antigüedad
+
+
+📍 Paso 2: Validando requisitos de antigüedad
+📊 [JubilacionPatronal-TC02-20YearRequirement] Paso 2 visible
+👆 [JubilacionPatronal-TC02-20YearRequirement] Seleccion masculino: Genero
+📋 [JubilacionPatronal-TC02-20YearRequirement] Fecha base del sistema
+{
+  "currentDay": "27",
+  "currentMonth": "8"
+}
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1970
+👆 [JubilacionPatronal-TC02-20YearRequirement] Ingreso anio 1970: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1998
+👆 [JubilacionPatronal-TC02-20YearRequirement] Ingreso anio 1998: Fecha de primer ingreso
+✓ [JubilacionPatronal-TC02-20YearRequirement] Alerta validacion de edad: esperado "No visible" → actual "No visible"
+✓ [JubilacionPatronal-TC02-20YearRequirement] Estado boton Continuar previo a fecha salida: esperado "Bloqueado funcionalmente" → actual "Bloqueado funcionalmente"
+✅ [JubilacionPatronal-TC02-20YearRequirement] Reingreso: No seleccionado
+   📅 Buscando grupo de fecha: "Fecha de última salida"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2024
+👆 [JubilacionPatronal-TC02-20YearRequirement] Ingreso anio 2024: Fecha de ultima salida
+👆 [JubilacionPatronal-TC02-20YearRequirement] Commit de cambios de fecha: Formulario Paso 2
+
+✅ Verificando Habilitación del Botón Continuar
+
+✓ [JubilacionPatronal-TC02-20YearRequirement] Estado boton Continuar despues de salida: esperado "Habilitado" → actual "Habilitado"
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC02-20YearRequirement] Flujo TC02 validado - Cumple requisitos (1998-2024)
+
+
+======================================================================
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 10 console message(s) logged to stderr

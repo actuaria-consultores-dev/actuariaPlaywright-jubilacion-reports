@@ -1,0 +1,127 @@
+🎭️ [JubilacionPatronal-Story] Empezando pre condicion de Jubilacion Patronal
+🔐 [JubilacionPatronal-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [JubilacionPatronal-Story] Login exitoso
+🔍 [JubilacionPatronal-Story] Verificando navegacion a dashboard
+✅ [JubilacionPatronal-Story] Navegacion exitosa a dashboard
+🎭️ [JubilacionPatronal-TC09] Empezando TC09: validacion de meses vacios
+
+======================================================================
+
+🎯 INICIANDO VALIDACIÓN DE REMUNERACIÓN MANUAL
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DE VALIDACIÓN DE REMUNERACIÓN
+======================================================================
+   • Tipo de Validación: Meses Incompletos (TC09)
+   • Valor de Entrada: 500
+   • Meses Esperados: 12
+   • Errores Mínimo Esperados: ninguno
+   • Debe Desactivar Continuar: Sí
+======================================================================
+
+📋 [JubilacionPatronal-TC08-TC09-ManualSalary] Información del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez",
+  "Año Nacimiento": "1978",
+  "Año Primer Ingreso": "1998",
+  "Año Última Salida": "2024"
+}
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC08-TC09-ManualSalary] Paso 1 visible
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Ex trabajador creado
+📁 [JubilacionPatronal-TC08-TC09-ManualSalary] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] PDF 1 cargado: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC08-TC09-ManualSalary] Cargando archivo: ./tests/data/documents/sri_template.pdf
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] PDF 2 cargado: ./tests/data/documents/sri_template.pdf
+
+📍 Paso 2: Configurando fechas del ex trabajador
+
+📊 [JubilacionPatronal-Step2] Paso 2 visible
+📋 [JubilacionPatronal-Step2] Fecha base del sistema
+{
+  "currentDay": "27",
+  "currentMonth": "8"
+}
+👆 [JubilacionPatronal-Step2] Seleccion masculino: Genero
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1978
+👆 [JubilacionPatronal-Step2] Ingreso anio 1978: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1998
+👆 [JubilacionPatronal-Step2] Ingreso anio 1998: Fecha de primer ingreso
+📊 [JubilacionPatronal-Step2] Sin errores de edad
+👆 [JubilacionPatronal-Step2] Seleccion No: Radio Reingreso
+   📅 Buscando grupo de fecha: "Fecha de última salida"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2024
+👆 [JubilacionPatronal-Step2] Ingreso anio 2024: Fecha de ultima salida
+👆 [JubilacionPatronal-Step2] Commit de cambios de fecha: Formulario Paso 2
+📋 [JubilacionPatronal-Step2] Calculo de antiguedad
+{
+  "entryYear": "1998",
+  "exitYear": "2024",
+  "yearsEmployed": 26
+}
+👆 [JubilacionPatronal-Step2] Click para avanzar desde Paso 2: Boton Continuar
+✅ [JubilacionPatronal-Step2] Paso 2 avanzado correctamente
+
+📍 Paso 3: Entrando modo manual de remuneración
+
+
+📍 Paso 3: Entrando modo manual de remuneración
+📊 [JubilacionPatronal-TC08-TC09-ManualSalary] Paso 3 visible
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Método de entrada manual seleccionado
+📋 [JubilacionPatronal-TC08-TC09-ManualSalary] Cálculo de Período
+{
+  "Año de Inicio": 2021,
+  "Mes de Inicio": 7,
+  "Total Meses": 12
+}
+
+ℹ️  Llenado de 12 celdas de remuneración con valor: 500
+
+ℹ️ Llenado por lotes: 12 celdas de 61 disponibles (solicitadas: 12) | startYear=2021 startMonth=7
+✅ Spot-check OK: última celda tiene valor="$500"
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Remuneraciones completadas: 12 meses con valor 500
+
+🔍 Verificando Bloqueo por Meses Incompletos
+
+📋 [JubilacionPatronal-TC08-TC09-ManualSalary] Validaciones esperadas por meses incompletos
+{
+  "shouldDisableContinue": true,
+  "manualMonths": 12
+}
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Radio "No conozco" seleccionado para último cargo
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Radio "No" seleccionado para rebates
+✓ [JubilacionPatronal-TC08-TC09-ManualSalary] Mensaje validacion por meses incompletos: esperado "Debe mostrarse mensaje de validacion" → actual "Mensaje visible"
+✓ [JubilacionPatronal-TC08-TC09-ManualSalary] Bloqueo del botón Continuar en TC09: esperado "Bloqueado funcionalmente" → actual "Bloqueado funcionalmente"
+✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Validación de bloqueo por meses incompletos completada exitosamente
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC08-TC09-ManualSalary] Validación de remuneración manual finalizada
+
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC09] TC09 finalizado
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 8 console message(s) logged to stderr

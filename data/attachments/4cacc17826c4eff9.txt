@@ -1,0 +1,76 @@
+🎭️ ---- Empezando pre condición
+🔐 Iniciando sesión con usuario demo...
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ Login exitoso
+🏠 Verificando navegación a página principal...
+✅ Navegación exitosa a dashboard
+🎭️ ---- Empezando TC01
+
+======================================================================
+
+🎯 INICIANDO VALIDACIÓN DE EDAD (ACTAF-2216 TC01)
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DE VALIDACIÓN DE EDAD
+======================================================================
+   • Error Esperado: Validación por edad insuficiente
+   • Diferencia Mínima Requerida: 14 años entre fecha de nacimiento y primer ingreso
+   • Botón Continuar Esperado: Bloqueado
+======================================================================
+
+📋 [JubilacionPatronal-TC01-AgeValidation] Información del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez",
+  "Año Nacimiento (Insuficiente)": "2000",
+  "Año Primer Ingreso": "2010"
+}
+
+📍 Paso 1: TC01 Validacion de edad: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC01-AgeValidation] Paso 1 visible
+✅ [JubilacionPatronal-TC01-AgeValidation] Ex trabajador creado
+📁 [JubilacionPatronal-TC01-AgeValidation] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC01-AgeValidation] Cargando archivo: ./tests/data/documents/sri_template.pdf
+👆 [JubilacionPatronal-TC01-AgeValidation] Click automatico luego de segunda carga PDF en Paso 1: Boton Continuar
+
+📍 Paso 2: Ingresando fechas con error de edad
+
+
+📍 Paso 2: Ingresando fechas con validacion de edad
+📊 [JubilacionPatronal-TC01-AgeValidation] Paso 2 visible
+📋 [JubilacionPatronal-TC01-AgeValidation] Fecha base del sistema
+{
+  "currentDay": "27",
+  "currentMonth": "8"
+}
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2000
+👆 [JubilacionPatronal-TC01-AgeValidation] Ingreso anio 2000: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2010
+👆 [JubilacionPatronal-TC01-AgeValidation] Ingreso anio 2010: Fecha de primer ingreso
+
+🔍 Verificando Error de Edad
+
+✓ [JubilacionPatronal-TC01-AgeValidation] Mensaje validacion de edad: esperado "La fecha de primer ingreso debe ser al menos 14 años después" → actual "La fecha de primer ingreso debe ser al menos 14 años después"
+✓ [JubilacionPatronal-TC01-AgeValidation] Estado boton Continuar: esperado "Bloqueado funcionalmente" → actual "Bloqueado funcionalmente"
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC01-AgeValidation] Flujo TC01 validado con secuencia de pasos actualizada
+
+
+======================================================================
+
+
+ℹ️  4 non-blocking error(s) ignored by filter.
+
+📋 8 console message(s) logged to stderr

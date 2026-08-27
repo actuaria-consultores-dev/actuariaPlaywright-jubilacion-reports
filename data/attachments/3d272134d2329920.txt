@@ -1,0 +1,111 @@
+🎭️ [JubilacionPatronal-Story] Empezando pre condicion de Jubilacion Patronal
+🔐 [JubilacionPatronal-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [JubilacionPatronal-Story] Login exitoso
+🔍 [JubilacionPatronal-Story] Verificando navegacion a dashboard
+✅ [JubilacionPatronal-Story] Navegacion exitosa a dashboard
+🎭️ [JubilacionPatronal-TC02] Empezando TC02
+
+======================================================================
+
+🎯 INICIANDO VALIDACIÓN DE ARCHIVO DE REMUNERACIÓN INVÁLIDO (TC02)
+
+======================================================================
+
+
+======================================================================
+🎯 CONFIGURACIÓN DE VALIDACIÓN DE ARCHIVO
+======================================================================
+   • Archivo de Remuneración: jubilacionPatronal-noHappypath.xlsx
+   • Errores Esperados: 2
+   • Tipo de Error: 2021-01: Valor: 50, Salario mínimo: 400, 2022-01: Valor: 50, Salario mínimo: 425
+======================================================================
+
+📋 [JubilacionPatronal-TC02-InvalidSalary] Información del Empleado
+{
+  "Cédula": "1721489951",
+  "Nombre": "Christian",
+  "Apellido": "Martinez"
+}
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+
+
+📍 Paso 1: Creando ex trabajador y cargando documentos obligatorios
+📊 [JubilacionPatronal-TC02-InvalidSalary] Paso 1 visible
+✅ [JubilacionPatronal-TC02-InvalidSalary] Ex trabajador creado
+📁 [JubilacionPatronal-TC02-InvalidSalary] Cargando archivo: ./tests/data/documents/cedula_template.pdf
+✅ [JubilacionPatronal-TC02-InvalidSalary] PDF 1 cargado: ./tests/data/documents/cedula_template.pdf
+📁 [JubilacionPatronal-TC02-InvalidSalary] Cargando archivo: ./tests/data/documents/sri_template.pdf
+✅ [JubilacionPatronal-TC02-InvalidSalary] PDF 2 cargado: ./tests/data/documents/sri_template.pdf
+
+📍 Paso 2: Configurando fechas del ex trabajador
+
+📊 [JubilacionPatronal-Step2] Paso 2 visible
+📋 [JubilacionPatronal-Step2] Fecha base del sistema
+{
+  "currentDay": "27",
+  "currentMonth": "8"
+}
+👆 [JubilacionPatronal-Step2] Seleccion masculino: Genero
+   📅 Buscando grupo de fecha: "Fecha de nacimiento *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1978
+👆 [JubilacionPatronal-Step2] Ingreso anio 1978: Fecha de nacimiento
+   📅 Buscando grupo de fecha: "Fecha de primer ingreso *"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/1998
+👆 [JubilacionPatronal-Step2] Ingreso anio 1998: Fecha de primer ingreso
+📊 [JubilacionPatronal-Step2] Sin errores de edad
+👆 [JubilacionPatronal-Step2] Seleccion No: Radio Reingreso
+   📅 Buscando grupo de fecha: "Fecha de última salida"
+   📅 ✅ Encontrados campos DD/MM/YYYY con getByLabel
+   ✅ Fecha completada: 27/8/2024
+👆 [JubilacionPatronal-Step2] Ingreso anio 2024: Fecha de ultima salida
+👆 [JubilacionPatronal-Step2] Commit de cambios de fecha: Formulario Paso 2
+📋 [JubilacionPatronal-Step2] Calculo de antiguedad
+{
+  "entryYear": "1998",
+  "exitYear": "2024",
+  "yearsEmployed": 26
+}
+👆 [JubilacionPatronal-Step2] Click para avanzar desde Paso 2: Boton Continuar
+✅ [JubilacionPatronal-Step2] Paso 2 avanzado correctamente
+
+📍 Paso 3: Cargando archivo de remuneración con errores
+
+
+📍 Paso 3: Cargando archivo de remuneracion
+📊 [JubilacionPatronal-TC02-InvalidSalary] Paso 3 visible
+✅ [JubilacionPatronal-TC02-InvalidSalary] Método de carga de archivo seleccionado
+📁 [JubilacionPatronal-TC02-InvalidSalary] Cargando archivo: ./tests/data/documents/jubilacionPatronal-noHappypath.xlsx
+✅ [JubilacionPatronal-TC02-InvalidSalary] Archivo cargado: jubilacionPatronal-noHappypath.xlsx
+📊 [JubilacionPatronal-TC02-InvalidSalary] Nombre de archivo verificado: jubilacionPatronal-noHappypath.xlsx
+
+🔍 Verificando Errores de Archivo
+
+📋 [JubilacionPatronal-TC02-InvalidSalary] Mensajes de error esperados
+{
+  "total": 2,
+  "errors": [
+    "2021-01: Valor: 50, Salario mínimo: 400",
+    "2022-01: Valor: 50, Salario mínimo: 425"
+  ]
+}
+✓ [JubilacionPatronal-TC02-InvalidSalary] Error esperado 1: esperado "2021-01: Valor: 50, Salario mínimo: 400" → actual "2021-01: Valor: 50, Salario mínimo: 400"
+✓ [JubilacionPatronal-TC02-InvalidSalary] Error esperado 2: esperado "2022-01: Valor: 50, Salario mínimo: 425" → actual "2022-01: Valor: 50, Salario mínimo: 425"
+
+======================================================================
+
+✅ [JubilacionPatronal-TC02-InvalidSalary] Todos los mensajes esperados de TC02 fueron validados
+
+======================================================================
+
+
+✅ ✅ ✅ [JubilacionPatronal-TC02] TC02 finalizado
+
+
+ℹ️  5 non-blocking error(s) ignored by filter.
+
+📋 8 console message(s) logged to stderr
