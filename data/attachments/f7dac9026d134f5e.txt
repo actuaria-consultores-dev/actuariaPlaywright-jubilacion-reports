@@ -1,0 +1,29 @@
+[LOG] Using Firebase Production Services for environment: stage [4:46:30 PM]
+[LOG] trackEvent view_login {timestamp: 2026-10-02T16:46:31.317Z} [4:46:31 PM]
+❌ CONSOLE ERROR: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21474:41)
+    at _createError (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21442:12)
+    at https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:22003:31
+❌ CONSOLE ERROR: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21474:41)
+    at _createError (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21442:12)
+    at https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:22003:31
+[LOG] Using Firebase Production Services for environment: stage [4:47:28 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:32 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:32 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:33 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:34 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:45 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.3.0 [4:47:52 PM]
+
+⚠️  1 error(s) detected during test execution:
+  1. FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21474:41)
+    at _createError (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21442:12)
+    at https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:22003:31
+
+⚠️  1 error(s) detected during test execution:
+  1. FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21474:41)
+    at _createError (https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:21442:12)
+    at https://act-compass-stage-proj.firebaseapp.com/assets/index-DVblHCeX.js:22003:31
