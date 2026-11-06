@@ -1,0 +1,22 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+🔍 [MisActas-Story] Navegación exitosa → /dashboard/actas/mis-actas
+🎭️ [MisActas-TC02] Empezando TC02: eliminar primera acta pendiente
+🎭️ [MisActas-TC02-Workflow] Iniciando flujo: Eliminar acta pendiente desde Mis Actas
+🔍 [MisActas-TC02-Workflow] Verificando que estamos en /dashboard/actas/mis-actas
+✅ [MisActas-TC02-Workflow] URL de Mis Actas verificada
+👆 [MisActas-TC02-Workflow] Click en pestaña Actas Pendientes: Tab Actas Pendientes
+👆 [MisActasPage] Click (name: Actas Pendientes): Tab Actas Pendientes
+✅ [MisActasPage] Pestaña Actas Pendientes seleccionada y tabla visible
+✅ [MisActas-TC02-Workflow] Pestaña de actas pendientes seleccionada
+ℹ️  [MisActasPage] Verificando si existen actas pendientes
+⚠️  [MisActasPage] No hay actas pendientes disponibles (conteo = 0)
+⚠️  [MisActas-TC02-Workflow] No hay actas pendientes disponibles - omitiendo prueba
+
+ℹ️  2 non-blocking error(s) ignored by filter.
+
+📋 7 console message(s) logged to stderr

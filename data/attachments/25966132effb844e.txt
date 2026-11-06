@@ -1,0 +1,52 @@
+[LOG] Using Firebase Production Services for environment: stage [5:23:26 PM]
+[LOG] trackEvent view_login {timestamp: 2026-11-06T17:23:28.526Z} [5:23:28 PM]
+[LOG] Using Firebase Production Services for environment: stage [5:23:30 PM]
+❌ CONSOLE ERROR: Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+❌ CONSOLE ERROR: Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:23:33 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:23:33 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:23:34 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:23:34 PM]
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: }
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: }
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:23:54 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:24:05 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:24:07 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:24:41 PM]
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta char…<pre>Internal Server Error</pre>
+</body>
+</html>
+}
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta char…<pre>Internal Server Error</pre>
+</body>
+</html>
+}
+
+⚠️  3 error(s) detected during test execution:
+  1. Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+  2. {message: Error en la respuesta del servidor, status: 500, details: }
+  3. {message: Error en la respuesta del servidor, status: 500, details: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta char…<pre>Internal Server Error</pre>
+</body>
+</html>
+}
+
+⚠️  3 error(s) detected during test execution:
+  1. Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+  2. {message: Error en la respuesta del servidor, status: 500, details: }
+  3. {message: Error en la respuesta del servidor, status: 500, details: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta char…<pre>Internal Server Error</pre>
+</body>
+</html>
+}
+[LOG] 📧 Enviando email de éxito al admin de ankla a: {actuariaContribuyenteEspecial: true, encuestasSmile: Object, mailAlertas: [OCULTO];[OCULTO];[OCULTO], mailCobranzas: [OCULTO], mailDetalle: [OCULTO]} [5:24:46 PM]

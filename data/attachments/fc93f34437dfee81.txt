@@ -1,0 +1,20 @@
+[LOG] Using Firebase Production Services for environment: stage [5:26:01 PM]
+[LOG] trackEvent view_login {timestamp: 2026-11-06T17:26:04.125Z} [5:26:04 PM]
+[LOG] Using Firebase Production Services for environment: stage [5:26:05 PM]
+❌ CONSOLE ERROR: Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+❌ CONSOLE ERROR: Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:26:10 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:26:10 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:26:11 PM]
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: }
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 500, details: }
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:26:31 PM]
+[LOG] Sistema Name:  actas-finiquito version:  1.4.0 [5:26:42 PM]
+
+⚠️  2 error(s) detected during test execution:
+  1. Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+  2. {message: Error en la respuesta del servidor, status: 500, details: }
+
+⚠️  2 error(s) detected during test execution:
+  1. Error al obtener URL de Storage: FirebaseError: Firebase Storage: Object 'companies_logos/UA6nfxdRUdXbuuaXBa4B.png' does not exist. (storage/object-not-found)
+  2. {message: Error en la respuesta del servidor, status: 500, details: }

@@ -1,0 +1,26 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+⚠️  [MisActas-Story] goto Mis Actas interrumpido por el SPA (intento 1/3): page.goto: net::ERR_ABORTED at https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas
+Call log:
+  - navigating to "https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas", waiting until "domcontentloaded"
+
+🔍 [MisActas-Story] Navegación exitosa → /dashboard/actas/mis-actas
+🎭️ [MisActas-TC01] Empezando TC01: continuar con primera acta pendiente
+🎭️ [MisActas-TC01-Workflow] Iniciando flujo: Continuar con acta pendiente desde Mis Actas
+🔍 [MisActas-TC01-Workflow] Verificando que estamos en /dashboard/actas/mis-actas
+✅ [MisActas-TC01-Workflow] URL de Mis Actas verificada
+👆 [MisActas-TC01-Workflow] Click en pestaña Actas Pendientes: Tab Actas Pendientes
+👆 [MisActasPage] Click (name: Actas Pendientes): Tab Actas Pendientes
+✅ [MisActasPage] Pestaña Actas Pendientes seleccionada y tabla visible
+✅ [MisActas-TC01-Workflow] Pestaña de actas pendientes seleccionada
+ℹ️  [MisActasPage] Verificando si existen actas pendientes
+⚠️  [MisActasPage] No hay actas pendientes disponibles (conteo = 0)
+⚠️  [MisActas-TC01-Workflow] No hay actas pendientes disponibles - omitiendo prueba
+
+ℹ️  2 non-blocking error(s) ignored by filter.
+
+📋 7 console message(s) logged to stderr
