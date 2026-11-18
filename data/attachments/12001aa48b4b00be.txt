@@ -1,0 +1,8 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+
+📋 4 console message(s) logged to stderr

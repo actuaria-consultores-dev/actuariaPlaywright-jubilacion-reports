@@ -1,0 +1,33 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+⚠️  [MisActas-Story] goto Mis Actas interrumpido por el SPA (intento 1/3): page.goto: net::ERR_ABORTED at https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas
+Call log:
+  - navigating to "https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas", waiting until "domcontentloaded"
+
+🔍 [MisActas-Story] Navegación exitosa → /dashboard/actas/mis-actas
+🎭️ [MisActas-TC14] Empezando TC14: reanudar acta en curso desde Mis Actas
+🎭️ [MisActas-TC14-Workflow] Iniciando flujo: Reanudar acta en progreso desde Mis Actas
+⏳ [MisActasPage] Esperando que el listado de actas cargue
+✅ [MisActasPage] Listado de actas cargado (encabezado + tabla visibles)
+✅ [MisActas-TC14-Workflow] Listado de actas cargado
+ℹ️  [MisActasPage] Acta en progreso encontrada (avance 6/7)
+ℹ️  [MisActasPage] 🔍 Intento 1 (a[href*="/nueva-acta/"] en celda de acción)...
+✅ [MisActasPage] ✅ "Continuar con el acta" navegó a: https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/nueva-acta/2cPcG5RoEk8nhALg60E8
+📊 [MisActasPage] Verificando URL de nueva acta
+✅ [MisActasPage] URL de continuación verificada: https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/nueva-acta/2cPcG5RoEk8nhALg60E8
+✅ [MisActas-TC14-Workflow] Acta reanudada en: https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/nueva-acta/2cPcG5RoEk8nhALg60E8
+📊 [MisActasPage] Verificando indicador de paso ("Paso X de Y")
+✅ [MisActasPage] Indicador de paso visible: "Paso 6 de 7"
+✅ [MisActas-TC14-Workflow] Avance conservado: listado 6/7 → asistente "Paso 6 de 7"
+
+✅ ✅ ✅ [MisActas-TC14-Workflow] Flujo de reanudación de acta en progreso completado
+
+
+✅ ✅ ✅ [MisActas-TC14] TC14 finalizado
+
+
+📋 7 console message(s) logged to stderr

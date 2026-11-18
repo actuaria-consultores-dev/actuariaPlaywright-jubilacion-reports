@@ -1,0 +1,347 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs/JubilacionPatronal/jubilacionPatronal.test.ts >> Verificar lista de Actas de Jubilación (Mis Actas) >> Lista de Actas de Jubilación | [AP] | TC13: Verificar las columnas y el avance del listado de actas en Mis Actas
+- Location: tests/specs/JubilacionPatronal/jubilacionPatronal.test.ts:282:2
+
+# Error details
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /.*\/dashboard\/actas\/mis-actas/
+Received string:  "https://act-compass-stage-proj.firebaseapp.com/dashboard/portal/home"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 20000ms
+    43 × locator resolved to <html lang="es-419">…</html>
+       - unexpected value "https://act-compass-stage-proj.firebaseapp.com/dashboard/portal/home"
+
+```
+
+```yaml
+- banner:
+  - button "Notificaciones":
+    - img
+    - text: "26"
+  - button "YUPANA ANALYTICS S.A. YUPANA ANALYTICS S.A. Plan Enterprise":
+    - img "YUPANA ANALYTICS S.A."
+    - paragraph: YUPANA ANALYTICS S.A.
+    - paragraph: Plan Enterprise
+- complementary:
+  - link "Actuaria":
+    - /url: /dashboard
+    - img "Actuaria"
+  - button "abrir/cerrar menú"
+  - textbox "Buscar..."
+  - list:
+    - button "Inicio":
+      - img
+      - text: Inicio
+    - list:
+      - listitem: Panel General
+      - button "Mi cuenta":
+        - img
+        - text: Mi cuenta
+      - button "Pagos y cobros":
+        - img
+        - text: Pagos y cobros
+      - button "Servicios":
+        - img
+        - text: Servicios
+      - button "Recursos":
+        - img
+        - text: Recursos
+  - paragraph: Actuaria+ Stage
+  - paragraph: soporteplus@actuaria.com
+  - text: v 2.0.3
+- heading "Hola, Rodrigo" [level=1]
+- paragraph: "Sesión anterior: hoy, 21:41 · hace 22 segundos"
+- button "Inicio"
+- button "Estudio actuarial"
+- button "Impuestos diferidos"
+- button "Actas de jubilación"
+- button "Control tributario"
+- button "Simulador de beneficios"
+- button "NavIA ᴮᵉᵗᵃ"
+- separator
+- paragraph: Datos correspondientes al 31 de diciembre del 2026
+- paragraph: Provisión acumulada
+- img
+- paragraph: $6.79M
+- paragraph: USD · Total acumulado
+- paragraph: Jubilación Patronal
+- paragraph: $5.36M
+- paragraph: Desahucio
+- paragraph: $1.43M
+- paragraph: Remuneración promedio
+- img
+- paragraph: $1.11K
+- paragraph: USD · Remuneración promedio
+- paragraph: Hombres
+- paragraph: $1.10K
+- paragraph: Mujeres
+- paragraph: $1.22K
+- paragraph: Distribución demográfica
+- img
+- paragraph: "558"
+- paragraph: Partícipes activos
+- paragraph: Hombres
+- paragraph: 483 · 87%
+- paragraph: Mujeres
+- paragraph: 75 · 13%
+- paragraph: Partícipes jubilados
+- img
+- paragraph: "21"
+- paragraph: Total jubilados
+- paragraph: Hombres
+- paragraph: 20 · 95%
+- paragraph: Mujeres
+- paragraph: 1 · 5%
+- paragraph: Quinquenio por tiempo de servicio
+- paragraph: Jubilados
+- paragraph: TS ≥ 25
+- paragraph: 20 ≤ TS < 25
+- paragraph: 15 ≤ TS < 20
+- paragraph: 10 ≤ TS < 15
+- paragraph: TS < 10
+- paragraph: Distribución provisión jubilación patronal por tiempo de servicio (en USD)
+- paragraph: Distribución número de partícipes por tiempo de servicio
+- paragraph: Distribución provisión bonificación por desahucio por tiempo de servicio (en USD)
+- paragraph
+- paragraph
+- separator
+- heading "Mis Servicios" [level=4]
+- paragraph: Elige el servicio que necesitas y empieza tu pedido cuando quieras.
+- img
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Estudios actuariales" [level=6]
+- paragraph: Genera tu cálculo actuarial de provisiones de beneficios post-empleo
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Cumple con la normativa contable y toma decisiones con respaldo actuarial. Calculamos provisiones por jubilación y desahucio con resultados sólidos, normativos y listos para auditar.
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Informe de impuestos diferidos" [level=6]
+- paragraph: Calcula el activo por impuesto diferido para obtener beneficios tributarios
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Calculamos el impuesto diferido por provisiones de jubilación y desahucio bajo normativa contable, para reflejar correctamente la situación fiscal de tu empresa y facilitar la obtención de beneficio tributario.
+- img
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Actas de jubilación patronal" [level=6]
+- paragraph: Documento técnico para la obtención de la pensión mensual y fondo global
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Calculamos la jubilación patronal según normativa laboral, generando la pensión mensual y el fondo global acumulado, con criterios técnicos y proyecciones confiables para cumplir obligaciones patronales.
+- img
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Control tributario de provisiones" [level=6]
+- paragraph: Composición histórica de provisiones, para el cumplimiento normativo
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Controla provisiones de forma precisa, identifica salidas de personal, organiza tus reportes y asegura el cumplimiento fiscal, todo sin fricciones y en menos tiempo.
+- img
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Simulador de beneficios post empleo" [level=6]
+- paragraph: Analiza tus provisiones, anticipando escenarios para la toma de decisiones
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Anticipa el impacto futuro de tus provisiones con proyecciones claras y visuales. Mejora la planificación financiera, la toma de decisiones y la transparencia con un análisis demográfico ágil y estratégico.
+- img
+- button "Conocer más":
+  - paragraph: Conocer más
+- heading "Consulta con NavIA ᴮᵉᵗᵃ" [level=6]
+- paragraph: Responde todas tus dudas con nuestra inteligencia artificial actuarial
+- text: Disponible
+- button "Ingresar"
+- button
+- paragraph: Agente de inteligencia artificial entrenado con toda la normativa laboral y modelos actuariales para responder cualquier duda sobre tu informe de jubilación patronal.
+- link "Escríbenos a WhatsApp":
+  - /url: https://wa.me/593979133351/?text=Hola+Actuaria,+tengo+novedades+sobre+el+Portal+de+Clientes
+```
+
+# Test source
+
+```ts
+  159 | 		await completeJubilacionPatronalWorkflow(jubilacionPatronalPage, page, CONFIG_TC15_DOUBLE_CONFIRM);
+  160 | 		tcLogger.completado('TC15 finalizado');
+  161 | 	});
+  162 | 
+  163 | 	test('Jubilacion Patronal| [SP] | TC10: Verificar rechazo del archivo de remuneraciones cuando la ventana de meses no corresponde a la fecha de salida', async ({ jubilacionPatronalPage, page }) => {
+  164 | 		const tcLogger = createLogger('JubilacionPatronal-TC10');
+  165 | 		tcLogger.inicio('Empezando TC10: rechazo por ventana de meses fuera de la fecha de salida');
+  166 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.LONG);
+  167 | 
+  168 | 		// El archivo se genera con la ventana desplazada (windowOffsetMonths), por lo
+  169 | 		// que el backend debe rechazarlo y el Paso 3 no debe renderizar el radiogroup
+  170 | 		// Sí/No. Sin ese assert el flujo se colgaría en el clic del radio.
+  171 | 		await verifyInvalidSalaryFileWorkflow(jubilacionPatronalPage, page, CONFIG_TC10_OUT_OF_PERIOD_SALARY);
+  172 | 		tcLogger.completado('TC10 finalizado');
+  173 | 	});
+  174 | 
+  175 | 	test('Jubilacion Patronal| [SP] | TC11: Verificar rechazo de un archivo con extensión o contenido inválido en el paso de remuneraciones', async ({ jubilacionPatronalPage, page }) => {
+  176 | 		const tcLogger = createLogger('JubilacionPatronal-TC11');
+  177 | 		tcLogger.inicio('Empezando TC11: rechazo de archivo con formato inválido');
+  178 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.FULL_FLOW);
+  179 | 
+  180 | 		// Se sube un PDF (cédula) donde se espera la plantilla de remuneraciones.
+  181 | 		// El workflow exige alerta visible + Continuar bloqueado.
+  182 | 		await verifyInvalidSalaryFileWorkflow(jubilacionPatronalPage, page, CONFIG_TC11_INVALID_SALARY_FORMAT);
+  183 | 		tcLogger.completado('TC11 finalizado');
+  184 | 	});
+  185 | 
+  186 | 	test('Jubilacion Patronal| ACTAF 2470 | [AP] | TC12: Verificar que el resumen del paso 5 refleja exactamente el tipo de cálculo elegido', async ({ jubilacionPatronalPage, page }) => {
+  187 | 		const tcLogger = createLogger('JubilacionPatronal-TC12');
+  188 | 		tcLogger.inicio('Empezando TC12: coherencia entre el Paso 4 y el resumen del Paso 5');
+  189 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.FULL_FLOW);
+  190 | 
+  191 | 		// ACTAF-2470 quedó obsoleto tal como estaba escrito: el rediseño 2026-11
+  192 | 		// eliminó el paso de política de pago y el Paso 5 pasó a ser el resumen
+  193 | 		// consolidado. `verifyStep5SummaryCoherence` valida el contrato vigente:
+  194 | 		// el resumen muestra exactamente el tipo de cálculo del Paso 4 y el
+  195 | 		// selector de política ya no existe en el DOM.
+  196 | 		await completeJubilacionPatronalWorkflow(jubilacionPatronalPage, page, CONFIG_TC12_STEP5_SUMMARY_COHERENCE);
+  197 | 		tcLogger.completado('TC12 finalizado');
+  198 | 	});
+  199 | 
+  200 | 	test('Jubilacion Patronal| ACTAF 2412 | [HP] | TC07 : Happy path, usuario ingresa 60 ultimas remuneraciones manualmente @daily', async ({ jubilacionPatronalPage, page }) => {
+  201 | 		const tcLogger = createLogger('JubilacionPatronal-TC07');
+  202 | 		tcLogger.inicio('Empezando TC07: ingreso manual de remuneraciones');
+  203 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.LONG);
+  204 | 
+  205 | 		// This is the manual entry happy path test
+  206 | 		await completeJubilacionPatronalWorkflow(jubilacionPatronalPage, page, CONFIG_TC07_MANUAL_ENTRY);
+  207 | 		tcLogger.completado('TC07 finalizado');
+  208 | 	});
+  209 | 
+  210 | 	test('Jubilacion Patronal| ACTAF 2412 | [SP] | TC08 : Usuario ingresa remuneraciones con valor menor al sueldo mínimo ($400)', async ({ jubilacionPatronalPage, page }) => {
+  211 | 		const tcLogger = createLogger('JubilacionPatronal-TC08');
+  212 | 		tcLogger.inicio('Empezando TC08: validacion de salario minimo');
+  213 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.LONG);
+  214 | 
+  215 | 		await verifyManualSalaryValidationWorkflow(jubilacionPatronalPage, page, CONFIG_TC08_MANUAL_BELOW_MINIMUM);
+  216 | 		tcLogger.completado('TC08 finalizado');
+  217 | 	});
+  218 | 
+  219 | 	test('Jubilacion Patronal| ACTAF 2412 | [SP] | TC09 : Usuario deja algunos meses vacíos en remuneraciones', async ({ jubilacionPatronalPage, page }) => {
+  220 | 		const tcLogger = createLogger('JubilacionPatronal-TC09');
+  221 | 		tcLogger.inicio('Empezando TC09: validacion de meses vacios');
+  222 | 		test.setTimeout(JUBILACION_TEST_DATA.TIMEOUTS.LONG);
+  223 | 
+  224 | 		await verifyManualSalaryValidationWorkflow(jubilacionPatronalPage, page, CONFIG_TC09_MANUAL_EMPTY_MONTHS);
+  225 | 		tcLogger.completado('TC09 finalizado');
+  226 | 	});
+  227 | });
+  228 | 
+  229 | /**
+  230 |  * Lista de Actas de Jubilación (Mis Actas):
+  231 |  * Pruebas sobre la lista de actas del usuario: pestaña de actas pendientes,
+  232 |  * la tabla de actas y la acción "Continuar con el acta".
+  233 |  */
+  234 | story('Verificar lista de Actas de Jubilación (Mis Actas)', async () => {
+  235 | 	const storyLogger = createLogger('MisActas-Story');
+  236 | 
+  237 | 	precondition(async ({ loginPage, page }) => {
+  238 | 		storyLogger.inicio('Preparando entorno de Mis Actas');
+  239 | 		// Navegación acotada + reintentos (evita cuelgues opacos del hook en CI)
+  240 | 		await gotoWithRetry(page, '/', { logger: storyLogger, label: 'Página de login (Mis Actas)' });
+  241 | 
+  242 | 		await test.step('Login como usuario demo', async () => {
+  243 | 			storyLogger.autenticacion('Iniciando sesion con usuario demo', process.env.DEMO_USER_EMAIL || '');
+  244 | 			const demoEmail = process.env.DEMO_USER_EMAIL || '';
+  245 | 			const demoPassword = process.env.DEMO_USER_PASSWORD || '';
+  246 | 
+  247 | 			await loginPage.loginFormulario(demoEmail, demoPassword);
+  248 | 			storyLogger.exito('Login exitoso');
+  249 | 		});
+  250 | 
+  251 | 		await test.step('Verificar dashboard', async () => {
+  252 | 			await expect(page).toHaveURL(/\/dashboard\/portal\/home/, { timeout: 20000 });
+  253 | 			storyLogger.exito('Navegación exitosa a dashboard');
+  254 | 		});
+  255 | 
+  256 | 		await test.step('Navegar a Mis Actas', async () => {
+  257 | 			// gotoWithRetry: el SPA puede abortar el goto justo después del login.
+  258 | 			await gotoWithRetry(page, '/dashboard/actas/mis-actas', { logger: storyLogger, label: 'Mis Actas' });
+> 259 | 			await expect(page).toHaveURL(/.*\/dashboard\/actas\/mis-actas/, { timeout: 20000 });
+      |                       ^ Error: expect(page).toHaveURL(expected) failed
+  260 | 			storyLogger.navegacion('Navegación exitosa → /dashboard/actas/mis-actas');
+  261 | 		});
+  262 | 	});
+  263 | 
+  264 | 	test('Lista de Actas de Jubilación | [HP] | TC01: Usuario visualiza actas pendientes y continúa con la primera acta @daily', async ({ misActasPage, page }) => {
+  265 | 		const tcLogger = createLogger('MisActas-TC01');
+  266 | 		tcLogger.inicio('Empezando TC01: continuar con primera acta pendiente');
+  267 | 		test.setTimeout(120000);
+  268 | 
+  269 | 		await verifyContinueWithPendingActaWorkflow(misActasPage, page, CONFIG_MIS_ACTAS_TC01_CONTINUE_PENDING);
+  270 | 		tcLogger.completado('TC01 finalizado');
+  271 | 	});
+  272 | 
+  273 | 	test('Lista de Actas de Jubilación | [HP] | TC02: Usuario elimina una acta pendiente y el conteo se actualiza @daily', async ({ misActasPage, page }) => {
+  274 | 		const tcLogger = createLogger('MisActas-TC02');
+  275 | 		tcLogger.inicio('Empezando TC02: eliminar primera acta pendiente');
+  276 | 		test.setTimeout(150000);
+  277 | 
+  278 | 		await verifyDeletePendingActaWorkflow(misActasPage, page, CONFIG_MIS_ACTAS_TC02_DELETE_PENDING);
+  279 | 		tcLogger.completado('TC02 finalizado');
+  280 | 	});
+  281 | 
+  282 | 	test('Lista de Actas de Jubilación | [AP] | TC13: Verificar las columnas y el avance del listado de actas en Mis Actas', async ({ misActasPage, page }) => {
+  283 | 		const tcLogger = createLogger('MisActas-TC13');
+  284 | 		tcLogger.inicio('Empezando TC13: columnas y avance del listado de actas');
+  285 | 		test.setTimeout(120000);
+  286 | 
+  287 | 		// Gap §4.8 del audit: las columnas TIPO DE CÁLCULO y PROCESO quedan en '—'
+  288 | 		// mientras el acta está 'Pendiente', así que la aserción de valor real se
+  289 | 		// hace solo para filas con estado distinto de 'Pendiente'.
+  290 | 		await verifyMisActasTableColumnsWorkflow(misActasPage, page, CONFIG_MIS_ACTAS_TC13_TABLE_COLUMNS);
+  291 | 		tcLogger.completado('TC13 finalizado');
+  292 | 	});
+  293 | 
+  294 | 	test('Lista de Actas de Jubilación | [SP] | TC14: Verificar que el asistente conserva el avance tras reanudar un acta en curso', async ({ misActasPage, page }) => {
+  295 | 		const tcLogger = createLogger('MisActas-TC14');
+  296 | 		tcLogger.inicio('Empezando TC14: reanudar acta en curso desde Mis Actas');
+  297 | 		test.setTimeout(150000);
+  298 | 
+  299 | 		// Se reanuda desde "Mis Actas" (no por URL) porque el wizard no expone una
+  300 | 		// ruta de reanudación directa. El caso se auto-omite si no hay ninguna acta
+  301 | 		// con avance intermedio (AVANCE n/7 con n>1).
+  302 | 		await verifyResumeInProgressActaWorkflow(misActasPage, page, CONFIG_MIS_ACTAS_TC14_RESUME_IN_PROGRESS);
+  303 | 		tcLogger.completado('TC14 finalizado');
+  304 | 	});
+  305 | 
+  306 | 	test('Lista de Actas de Jubilación | [AP] | TC16: Verificar el estado vacío y el error de servicio en Mis Actas', async ({ misActasPage, page }) => {
+  307 | 		const tcLogger = createLogger('MisActas-TC16');
+  308 | 		tcLogger.inicio('Empezando TC16: estados de API (vacío y error 500) en Mis Actas');
+  309 | 		test.setTimeout(180000);
+  310 | 
+  311 | 		// Mockea el endpoint del listado (POST /firestore/query/custom) con 200 {data:[]}
+  312 | 		// y luego 500, verificando los mensajes de estado vacío / error de servicio.
+  313 | 		await verifyMisActasApiStatesWorkflow(
+  314 | 			misActasPage,
+  315 | 			page,
+  316 | 			CONFIG_MIS_ACTAS_TC16_API_STATES,
+  317 | 			MIS_ACTAS_API_STATE_EXPECTATIONS
+  318 | 		);
+  319 | 		tcLogger.completado('TC16 finalizado');
+  320 | 	});
+  321 | });
+  322 | 
+```
