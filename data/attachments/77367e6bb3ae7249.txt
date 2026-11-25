@@ -1,0 +1,6 @@
+[LOG] Using Firebase Production Services for environment: stage [4:00:55 PM]
+[LOG] trackEvent view_login {timestamp: 2026-11-25T16:00:57.500Z} [4:00:57 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [4:00:58 PM]
+[LOG] Using Firebase Production Services for environment: stage [4:00:59 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [4:00:59 PM]
+[INFO] Versión del cliente {modulo: actas, version: 1.4.5, build: 2026-11-25T00:28:39.637Z} [4:01:01 PM]

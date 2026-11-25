@@ -1,0 +1,57 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+⚠️  [MisActas-Story] goto Mis Actas interrumpido por el SPA (intento 1/3): page.goto: net::ERR_ABORTED at https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas
+Call log:
+  - navigating to "https://act-compass-stage-proj.firebaseapp.com/dashboard/actas/mis-actas", waiting until "domcontentloaded"
+
+🔍 [MisActas-Story] Navegación exitosa → /dashboard/actas/mis-actas
+🎭️ [MisActas-TC13] Empezando TC13: columnas y avance del listado de actas
+🎭️ [MisActas-TC13-Workflow] Iniciando flujo: Columnas y avance del listado de actas
+⏳ [MisActasPage] Esperando que el listado de actas cargue
+✅ [MisActasPage] Listado de actas cargado (encabezado + tabla visibles)
+✅ [MisActas-TC13-Workflow] Listado de actas cargado
+ℹ️  [MisActasPage] Verificando si existen actas en el listado
+⏳ [MisActasPage] Esperando que el listado de actas cargue
+✅ [MisActasPage] Listado de actas cargado (encabezado + tabla visibles)
+ℹ️  [MisActasPage] Extrayendo conteo de actas del encabezado
+⏳ [MisActasPage] Esperando que el listado de actas cargue
+✅ [MisActasPage] Listado de actas cargado (encabezado + tabla visibles)
+✅ [MisActasPage] Conteo extraído: 259 actas
+✅ [MisActasPage] Hay actas disponibles (259)
+📊 [MisActasPage] Verificando encabezados de la tabla
+✅ [MisActasPage] Encabezados de tabla verificados: CREACIÓN | EMPLEADO | TIPO DE CÁLCULO | PROCESO | ESTADO | AVANCE | 
+✅ [MisActas-TC13-Workflow] Encabezados verificados: CREACIÓN | EMPLEADO | TIPO DE CÁLCULO | PROCESO | ESTADO | AVANCE | ACCIONES
+📊 [MisActasPage] Verificando columnas de contenido y avance del listado
+✅ [MisActasPage] Columnas verificadas en 5 filas (denominadores: 7; avances: 2/7, 3/7, 3/7, 6/7, 3/7…)
+✅ [MisActas-TC13-Workflow] 5 filas verificadas. AVANCE: 2/7, 3/7, 3/7, 6/7, 3/7
+📋 [MisActas-TC13-Workflow] Muestra de columnas de negocio
+{
+  "tipoCalculo": [
+    "—",
+    "—",
+    "—",
+    "Pensión mensual + Fondo global",
+    "—"
+  ],
+  "proceso": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "—"
+  ]
+}
+
+✅ ✅ ✅ [MisActas-TC13-Workflow] Flujo de columnas y avance del listado completado
+
+
+✅ ✅ ✅ [MisActas-TC13] TC13 finalizado
+
+
+ℹ️  3 non-blocking error(s) ignored by filter.
+
+📋 7 console message(s) logged to stderr

@@ -1,0 +1,10 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+
+ℹ️  2 non-blocking error(s) ignored by filter.
+
+📋 4 console message(s) logged to stderr

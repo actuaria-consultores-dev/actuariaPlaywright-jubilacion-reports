@@ -1,0 +1,28 @@
+🎭️ [MisActas-Story] Preparando entorno de Mis Actas
+🔐 [MisActas-Story] Iniciando sesion con usuario demo (de***@[OCULTO])
+🔐 [LoginPage] Iniciando sesión (de***@[OCULTO])
+✅ [LoginPage] Login completado
+✅ [MisActas-Story] Login exitoso
+✅ [MisActas-Story] Navegación exitosa a dashboard
+🔍 [MisActas-Story] Navegación exitosa → /dashboard/actas/mis-actas
+🎭️ [MisActas-TC16] Empezando TC16: estados de API (vacío y error 500) en Mis Actas
+🎭️ [MisActas-TC16-Workflow] Iniciando flujo: Estados vacío y de error del listado
+✅ [MisActas-TC16-Workflow] Endpoint del listado mockeado con {"data": []}
+📊 [MisActasPage] Verificando estado vacío del listado
+✅ [MisActasPage] Estado vacío verificado (sin filas, mensaje visible)
+✅ [MisActas-TC16-Workflow] Estado vacío verificado
+✅ [MisActas-TC16-Workflow] Endpoint del listado mockeado con HTTP 500
+📊 [MisActasPage] Verificando estado de error del listado
+✅ [MisActasPage] Estado de error verificado ("No se pudieron cargar tus actas")
+✅ [MisActas-TC16-Workflow] Estado de error verificado
+✅ [MisActas-TC16-Workflow] Mock retirado; el endpoint real vuelve a responder
+
+✅ ✅ ✅ [MisActas-TC16-Workflow] Flujo de estados vacío y de error completado
+
+
+✅ ✅ ✅ [MisActas-TC16] TC16 finalizado
+
+
+ℹ️  5 non-blocking error(s) ignored by filter.
+
+📋 12 console message(s) logged to stderr

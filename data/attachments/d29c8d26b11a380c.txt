@@ -1,0 +1,19 @@
+[LOG] Using Firebase Production Services for environment: stage [3:57:45 PM]
+[LOG] trackEvent view_login {timestamp: 2026-11-25T15:57:47.433Z} [3:57:47 PM]
+[LOG] Using Firebase Production Services for environment: stage [3:57:48 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [3:57:49 PM]
+[INFO] Versión del cliente {modulo: actas, version: 1.4.5, build: 2026-11-25T00:28:39.637Z} [3:57:50 PM]
+[LOG] Using Firebase Production Services for environment: stage [3:57:51 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [3:57:51 PM]
+[INFO] Versión del cliente {modulo: actas, version: 1.4.5, build: 2026-11-25T00:28:39.637Z} [3:57:52 PM]
+[LOG] Using Firebase Production Services for environment: stage [3:57:53 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [3:57:54 PM]
+[INFO] Versión del cliente {modulo: actas, version: 1.4.5, build: 2026-11-25T00:28:39.637Z} [3:57:55 PM]
+❌ CONSOLE ERROR: {message: Internal Server Error, status: 500, details: Object}
+❌ CONSOLE ERROR: {message: Internal Server Error, status: 500, details: Object}
+
+⚠️  1 error(s) detected during test execution:
+  1. {message: Internal Server Error, status: 500, details: Object}
+
+⚠️  1 error(s) detected during test execution:
+  1. {message: Internal Server Error, status: 500, details: Object}

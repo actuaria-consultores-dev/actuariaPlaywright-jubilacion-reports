@@ -1,0 +1,15 @@
+[LOG] Using Firebase Production Services for environment: stage [3:44:48 PM]
+[LOG] trackEvent view_login {timestamp: 2026-11-25T15:44:50.539Z} [3:44:50 PM]
+[LOG] Using Firebase Production Services for environment: stage [3:44:52 PM]
+[INFO] Versión del cliente {modulo: host, version: 2.0.3, build: 2026-11-24T23:21:03.071Z} [3:44:52 PM]
+[INFO] Versión del cliente {modulo: actas, version: 1.4.5, build: 2026-11-25T00:28:39.637Z} [3:44:54 PM]
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 403, details: Object}
+❌ CONSOLE ERROR: {message: Error en la respuesta del servidor, status: 403, details: Object}
+[LOG] 📧 Enviando email de éxito al admin de ankla a: {actuariaContribuyenteEspecial: true, encuestasSmile: Object, mailAlertas: [OCULTO];[OCULTO], mailCobranzas: [OCULTO], mailDetalle: [OCULTO]} [3:46:04 PM]
+[LOG] ✅ Email de éxito enviado correctamente [3:46:04 PM]
+
+⚠️  1 error(s) detected during test execution:
+  1. {message: Error en la respuesta del servidor, status: 403, details: Object}
+
+⚠️  1 error(s) detected during test execution:
+  1. {message: Error en la respuesta del servidor, status: 403, details: Object}
